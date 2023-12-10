@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #ffe8d6; /* Light beige background */
+    color: #3f4238; /* Dark green text */
 }
 
 /* Utility Classes */
@@ -17,16 +17,16 @@ body {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
+    background: #6b705c; /* Olive green background */
+    color: #ffe8d6; /* Light beige text */
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #888 1px solid;
+    border-bottom: #d4c7b0 1px solid; /* Light brown border */
 }
 
 /* Navigation */
 header a {
-    color: #fff;
+    color: #ffe8d6; /* Light beige links */
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -59,36 +59,36 @@ header nav {
 }
 
 header .highlight, header .current a {
-    color: #e8491d;
+    color: #b98b73; /* Peach highlight */
     font-weight: bold;
 }
 
 header a:hover {
-    color: #ffffff;
+    color: #cb997e; /* Light brown on hover */
     font-weight: bold;
 }
 
 /* Button */
 .button {
     height: 38px;
-    background: #e8491d;
+    background: #b7b7a4; /* Greyish green button */
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
-    color: #ffffff;
+    color: #3f4238; /* Dark green text */
 }
 
 /* Sections */
 section {
     padding: 20px 0;
-    background: #f4f4f4;
+    background: #ddbea9; /* Soft beige section background */
 }
 
 /* Footer */
 footer {
     padding: 20px 0;
-    background: #333;
-    color: #fff;
+    background: #6b705c; /* Olive green background */
+    color: #ffe8d6; /* Light beige text */
     text-align: center;
 }
 
