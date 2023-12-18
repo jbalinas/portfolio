@@ -1,110 +1,214 @@
-/* Main Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    background-color: #f5f5dc; /* beige background */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #ffe8d6; /* Light beige background */
-    color: #3f4238; /* Dark green text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Utility Classes */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+.main-container {
+    display: flex;
+    align-items: center; /* Center children vertically */
 }
 
-/* Header */
-header {
-    background: #6b705c; /* Olive green background */
-    color: #ffe8d6; /* Light beige text */
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #d4c7b0 1px solid; /* Light brown border */
+.intro-box {
+    border: 2px solid #a0522d; /* light brown border */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between intro box and buttons */
 }
 
-/* Navigation */
-header a {
-    color: #ffe8d6; /* Light beige links */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.links-container a {
+    display: block;
+    color: black;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+    margin: 5px 0;
+    font-size: 6vw;
 }
 
-header ul {
+header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px; /* Add padding above the content box */
+}
+
+nav {
+    display: inline-block;
+}
+
+.icon-button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px; /* Adjust icon size */
+}
+
+.content-box {
+    border: 2px solid #a0522d; /* Light brown border */
+    padding: 20px;
+    background-color: transparent;
+    width: 60%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.about-title {
+    flex-basis: 30%; /* Adjust this as needed */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px; /* Adds some space between the title and the details */
+}
+
+.large-font {
+    font-size: 5vw; /* Adjust large font size as needed */
+    font-weight: bold;
+}
+
+.about-details {
+    flex-basis: 70%; /* Adjust this as needed */
+}
+
+.about-details ul {
+    list-style: none; /* Removes default bullet points */
     padding: 0;
-    margin: 0;
-    list-style: none;
-    overflow: hidden;
 }
 
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+.about-details ul li {
+    margin-bottom: 10px; /* Adds space between bullet points */
 }
 
-header #branding {
-    float: left;
-}
-
-header #branding h1 {
-    margin: 0;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header .highlight, header .current a {
-    color: #b98b73; /* Peach highlight */
-    font-weight: bold;
-}
-
-header a:hover {
-    color: #cb997e; /* Light brown on hover */
-    font-weight: bold;
-}
-
-/* Button */
-.button {
-    height: 38px;
-    background: #b7b7a4; /* Greyish green button */
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #3f4238; /* Dark green text */
-}
-
-/* Sections */
-section {
-    padding: 20px 0;
-    background: #ddbea9; /* Soft beige section background */
-}
-
-/* Footer */
 footer {
-    padding: 20px 0;
-    background: #6b705c; /* Olive green background */
-    color: #ffe8d6; /* Light beige text */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.content-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 10px;*/
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+    background-color: transparent;
+}
+
+button[type="submit"] {
+    background-color: #4B543B;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: lightslategray;
+}
+
+.intro-box {
+    border: 2px solid #a0522d; /* light brown border */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Add space between the intro box and social buttons */
+}
+
+.social-buttons {
+    text-align: center;
+    margin-bottom: 20px; /* Add space between social buttons and link container */
+}
+
+.button-container {
+    /* Style as needed */
+    margin-bottom: 20px; /* Space between buttons and the bottom of left-container */
+    padding-top: 10px; /* Adjust this value as needed */
     text-align: center;
 }
 
-/* Media Queries */
-@media(max-width: 768px) {
-    header #branding, header nav, header nav li, .container {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
+.button {
+    /* Style your buttons here */
+    margin-right: 10px; /* Space between buttons */
+}
 
-    header nav ul {
-        padding-top: 20px;
-    }
+.links-container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    header {
-        padding-bottom: 20px;
-    }
+.social-btn {
+    padding: 10px 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.linkedin {
+    background-color: #333;
+}
+
+.github {
+    background-color: #333;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact - Jasper Balinas</title>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html" class="icon-button"><span class="material-icons">home</span></a>
+        <a href="about.html" class="icon-button"><span class="material-icons">info</span></a>
+        <a href="projects.html" class="icon-button"><span class="material-icons">folder</span></a>
+        <a href="contact.html" class="icon-button"><span class="material-icons">email</span></a>
+    </nav>
+</header>
+
+<main class="content-box">
+    <h1>Contact Me</h1>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 Jasper Balinas</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
