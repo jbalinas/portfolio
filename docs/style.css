@@ -60,18 +60,22 @@ nav {
 
 .content-box {
     border: 2px solid #a0522d; /* Light brown border */
-    padding: 20px;
     background-color: transparent;
     width: 60%;
     max-width: 600px; /* Adjust as needed */
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional */
+    margin: 20px auto; /* Adjust top and bottom margin as needed */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional shadow effect */
+
+    overflow: auto; /* Enables scrolling for overflow content */
+    max-height: 500px; /* Maximum height of the box */
+
+    /* Flexbox properties */
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    overflow: auto;
+    align-items: flex-start; /* Aligns content to the start, preventing cut-off */
 }
+
 
 .about-section {
     display: flex;

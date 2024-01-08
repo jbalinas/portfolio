@@ -12,3 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+document.querySelector('.content-box').scrollTop = 0;
